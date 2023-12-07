@@ -7,6 +7,11 @@
 </head>
 <body>
     <h1>{{$title}}</h1>
+    <h2>{{$sub}}</h2>
     <p>{{$par}}</p>
+    <ul>
+        <li><a href="{{url('/chi-siamo')}}">Chi siamo</a></li>
+        <li><a href="{{url('/menu')}}">Menu</a></li>
+    </ul>
 </body>
 </html>

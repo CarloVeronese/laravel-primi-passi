@@ -14,5 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home', ["title" => 'Hello World', "par" => 'Laravel Test']);
+    $data = [
+        'title' => 'Hello World', 
+        'par' => 'Laravel Test',
+        'sub' => 'Lorem Ipsum'
+    ];
+    return view('home', $data);
+});
+
+Route::get('/chi-siamo', function () {
+    $data = [
+        'title' => 'Chi Siamo', 
+    ];
+    return view('chi-siamo', $data);
+});
+
+Route::get('/menu', function () {
+    $data = [
+        'title' => 'Menu', 
+    ];
+    return view('menu', $data);
 });
